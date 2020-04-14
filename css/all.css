@@ -1214,6 +1214,7 @@ footer .btt i {
    
     #home .bg{
         height: 80vh;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.884)),url("images/bg.jpg") !important;
     }
     nav .menu .logo {
         display : block;
