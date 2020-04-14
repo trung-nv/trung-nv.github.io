@@ -96,7 +96,7 @@ body{
 /* Header */
 
 .parallax-window {
-    min-height: 400px;
+
     background: transparent;
 }
 #home .bg { 
@@ -534,7 +534,6 @@ nav .menu ul li i{
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background: #f5f5f5;
     height: auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -781,7 +780,17 @@ width: 100%;
 }
 
 /* End section resume */
-
+.fact-bg {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    background-image: url('../images/bg2.jpg');
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    
+}
 .block-content ul.fact-list{
     list-style: none;
     display: -webkit-box;
@@ -790,7 +799,7 @@ width: 100%;
     width: 100%;
     margin-bottom: 0;
 }
-.block-content ul.fact-list li:first-child{
+/* .block-content ul.fact-list li:first-child{
     background: #199cdb;
 }
 .block-content ul.fact-list li:nth-child(2){
@@ -801,11 +810,12 @@ width: 100%;
 }
 .block-content ul.fact-list li:last-child{
     background: #1F83B5;
-}
+} */
 .block-content ul.fact-list li {
     padding: 60px 0;
     color: #fff;
     width: 25%;
+    background: transparent;
 }
 
 .fact-list li .inner-fact {
@@ -1292,7 +1302,10 @@ footer .btt i {
         color: #ffffff;
         float: left;
     }
-    
+    .fact-bg {
+        height: auto;
+        background-attachment: unset;
+    }
     .fact-list li .desc-fact span {
         display: block;
         font-size: 32px;

@@ -1,7 +1,7 @@
 $(document).ready(  function (){
     new WOW().init();
 
-    $('.parallax-window').parallax({imageSrc: 'images/bg.jpg'});
+    $('.parallax-window').parallax([{imageSrc: 'images/bg.jpg'}, {imageSrc: 'images/bg2.jpg'}]);
 
     // loading
     $(window).on('load',  function() {
