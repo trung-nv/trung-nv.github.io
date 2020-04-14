@@ -64,21 +64,13 @@ $(document).ready(  function (){
         $("html,body").animate({ scrollTop: $("#contact").offset().top }, 1000); 
         event.preventDefault();
     })
-    $('.open-nav').bind({
-        
-        mousedown : function(){
-            $('.open-nav').css( "transform","translateX(-10px) translateY(-50%) rotate(45deg)" )
-        },
-        mouseout : function(){
-            $('.open-nav').css( "transform","translateX(0px) translateY(-50%) rotate(45deg)" )
-         
-        },
-        mouseup : function(){
-            $('.open-nav').css( "transform","translateX(0px) translateY(-50%) rotate(45deg)"  )
+    $('.open-nav').click( function(){
             $('.menu-responsive ul li a').removeClass('active-list')
                $('.menu-responsive').addClass('show-menu')
-           } 
+         
     })
+
+
     $('.menu-responsive ul li:last-child a').click(function(){
     $('.menu-responsive').removeClass('show-menu') 
         event.preventDefault();
@@ -132,29 +124,60 @@ $(document).ready(  function (){
 
 
     // submit form
-    var submit = $("button[type='submit']");
-    submit.click(function(e)
-    {   
-    e.preventDefault();
-    var data = $('form#google-form').serialize();
-    var name = $('#name').val();
-    var phone = $('#phone').val();
-    var email = $('#email').val();
-    if (name == '' || phone == '' || email == ''){
-        alert('Please fill in the information (*)');                 
-    }
-    else{
-        $.ajax({
-            type : 'get', 
-            url : 'https://script.google.com/macros/s/AKfycbyYiNm-OUSsBY8UGGwajJM9qQgZ13P44CSdaapLwT71q-or8rIh/exec',
-            dataType:'json',
-            data : data
-        });
+   
     
-        alert('Thank you !');                
-    }
-            
+    $('#contact-form').validate({ 
+        rules: {
+            name: {
+                required: true,
+                minlength : 8
+            },
+            phone: {
+                required: true,
+                minlength: 10,
+                number : true
+            },
+            email : {
+                required: true,
+                email : true
+            }
+        },
+        
+        submitHandler: function (form) { 
+            var data = $('#contact-form').serialize()
+            $.ajax({
+                type : 'get', 
+                url : 'https://script.google.com/macros/s/AKfycbyYiNm-OUSsBY8UGGwajJM9qQgZ13P44CSdaapLwT71q-or8rIh/exec',
+                dataType:'json',
+                data : data
+            });
+            alert('Thank you !');    
+            $(':input').val('')
+        }
     });
+
+    // submit.click(function(e)
+    // {   
+    // e.preventDefault();
+    // var data = $('form#google-form').serialize();
+    // var name = $('#name').val();
+    // var phone = $('#phone').val();
+    // var email = $('#email').val();
+    // if (name == '' || phone == '' || email == ''){
+    //     alert('Please fill in the information (*)');                 
+    // }
+    // else{
+    //     $.ajax({
+    //         type : 'get', 
+    //         url : 'https://script.google.com/macros/s/AKfycbyYiNm-OUSsBY8UGGwajJM9qQgZ13P44CSdaapLwT71q-or8rIh/exec',
+    //         dataType:'json',
+    //         data : data
+    //     });
+    
+    //     alert('Thank you !');                
+    // }
+            
+    // });
     // https://script.google.com/macros/s/AKfycbyYiNm-OUSsBY8UGGwajJM9qQgZ13P44CSdaapLwT71q-or8rIh/exec
 
     // Slick slider

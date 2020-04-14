@@ -24,13 +24,13 @@
   <body>
 
     <!-- loading -->
-     <div class="loading">
+     <!-- <div class="loading">
             <div class="spinner-square">
                     <div class="square-1 square"></div>
                     <div class="square-2 square"></div>
                     <div class="square-3 square"></div>
             </div>
-     </div>
+     </div> -->
         
      <!-- End loading -->
      
@@ -38,6 +38,7 @@
         <!-- Header -->
         <header >
             <div id="home" class="home" >
+                <div class = "bg-overlay"></div>
                 <div class='bg parallax-window' data-parallax="scroll" data-image-src="images/bg.jpg">
                     <div class="container">
                         <div class="content">
@@ -578,23 +579,23 @@
                         
                     </div>  
                     <div class="sign-up">
-                            <div class="input">
-                                <form id="google-form"  method ="POST" >
-                                    <div class="flex-text">
-                                        <div class="text">
-                                                <input type="text" name="name" id="name" placeholder="Name *">
-                                                <input type="text" name="phone" id ="phone" placeholder="Phone *">
-                                                <input type="text" name="email" id ="email" placeholder="Email *">
-                                        </div>
-                                        <div class="text-area">
-                                                <textarea name="message" cols="30" rows="6"  id="message" placeholder="Message"></textarea>
-                                                
-                                        </div>
+                        <div class="input">
+                            <form id="contact-form"  >
+                                <div class="flex-text">
+                                    <div class="text">
+                                            <input type="text" name="name" id="name"  placeholder="Name *" >
+                                            <input type="text" name="phone" id ="phone" placeholder="Phone *">
+                                            <input type="text" name="email" data-trigger = "focus" id ="email" placeholder="Email *">
                                     </div>
-                                    <button type="submit"> SEND MESSAGE</button>
-                                </form>
-                            </div>    
-                        </div>
+                                    <div class="text-area">
+                                            <textarea name="message" cols="30" rows="6"  id="message" placeholder="Message"></textarea>
+                                            
+                                    </div>
+                                </div>
+                                <button type="submit" > SEND MESSAGE</button>
+                            </form>
+                        </div>    
+                    </div>
                 </div>
                     
                
@@ -630,6 +631,8 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
     <!-- Bootstrap -->
     <script  type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+    <!-- validation -->
+    <script type="text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
     <!-- All js -->
     <script  type="text/javascript" src="js/all.js"></script>
 </body>
