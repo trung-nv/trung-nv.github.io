@@ -153,31 +153,10 @@ $(document).ready(  function (){
             });
             alert('Thank you !');    
             $(':input').val('')
+            
         }
     });
 
-    // submit.click(function(e)
-    // {   
-    // e.preventDefault();
-    // var data = $('form#google-form').serialize();
-    // var name = $('#name').val();
-    // var phone = $('#phone').val();
-    // var email = $('#email').val();
-    // if (name == '' || phone == '' || email == ''){
-    //     alert('Please fill in the information (*)');                 
-    // }
-    // else{
-    //     $.ajax({
-    //         type : 'get', 
-    //         url : 'https://script.google.com/macros/s/AKfycbyYiNm-OUSsBY8UGGwajJM9qQgZ13P44CSdaapLwT71q-or8rIh/exec',
-    //         dataType:'json',
-    //         data : data
-    //     });
-    
-    //     alert('Thank you !');                
-    // }
-            
-    // });
     // https://script.google.com/macros/s/AKfycbyYiNm-OUSsBY8UGGwajJM9qQgZ13P44CSdaapLwT71q-or8rIh/exec
 
     // Slick slider
