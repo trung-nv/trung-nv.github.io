@@ -316,9 +316,9 @@ nav .menu ul li a {
 nav .menu ul li:hover a{
     color: #199cdb !important;
 }
-nav .menu ul li a:hover{
+/* nav .menu ul li a:hover{
     color: #199cdb !important;
-}
+} */
 nav .menu ul li i{
     font-size: 13px;
     color : #199cdb;
@@ -957,14 +957,16 @@ width: 100%;
     z-index: 2;
     position: absolute;
     width: 100%;
-    top: 30%;
+    top : 30%;
+   
 }
 
-.text-slider {
-    margin: 0%;
-    padding: 0%;
+/* .text-slider {
+    margin: 0;
+    padding: 0;
+    align-items: center;
     height: 100vh;
-}
+} */
 
 .text-slide h1 {
     color: #fff;

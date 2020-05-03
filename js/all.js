@@ -1,44 +1,18 @@
 $(document).ready(  function (){
     new WOW().init();
 
-    $('.parallax-window').parallax([{imageSrc: 'images/bg.jpg'}, {imageSrc: 'images/bg2.jpg'}]);
+    $('.parallax-window').parallax({imageSrc: 'images/bg.jpg'});
 
     // loading
     $(window).on('load',  function load() {
         $('.loading').delay(3000).fadeOut('fast');
      });
       // count text
-    $('.count').each(function () {
-        $(this).prop('Counter',0).animate({
-            Counter: $(this).text()
-        }, {
-            duration: 10000,
-            easing: 'swing',
-            step: function () {
-                $(this).text(Math.ceil(this.Counter));
-            }
-        });
+
+    $('.count').counterUp({
+        delay: 10,
+        time: 2000
     });
-    // var counters = $(".count");
-    // var countersQuantity = counters.length;
-    // var counter = [];
-
-    // for (i = 0; i < countersQuantity; i++) {
-    //     counter[i] = parseInt(counters[i].innerHTML);
-    // }
-
-    //  count = function(start, value, id) {
-    //     var localStart = start;
-    //     setInterval( function() {
-    //         if (localStart < value) {
-    //             localStart++;
-    //             counters[id].innerHTML = localStart;
-    //         }
-    //     },10);
-    // }
-    // for (j = 0; j < countersQuantity; j++) {
-    //     count(0, counter[j], j)
-    // }
     
     // scroll active
     var posNav = $('.menu').offset().top 

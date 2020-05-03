@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/animate-headline.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
@@ -348,7 +349,7 @@
                                                         <span class='transparent'></span>
                                                     </div>
                                                 </li>
-                                                <li>
+                                                <!-- <li>
                                                     <p>GIT/GITHUB</p>
                                                     <div class="rating">
                                                         <span></span>
@@ -357,7 +358,7 @@
                                                         <span></span>
                                                         <span class='transparent'></span>
                                                     </div>
-                                                </li>
+                                                </li> -->
                                                
                                             </ul>
                                         </div>
@@ -420,7 +421,7 @@
                             <li><a  data-filter=".group-two">React App</a></li>
                         </ul>
                         <div class="grid">
-                            <div class="column wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <div class="column wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset = "200">
                                 <div class="grid-item group-one" >
                                     <a href="https://atom-911.github.io/landingpage_1/" target="_blank" class="fancybox">
                                         <div class="bg-img " >
@@ -440,7 +441,7 @@
                                     <img  src="images/img2.jpg" >
                                 </div>
                             </div>
-                            <div class="column wow fadeInLeft">
+                            <div class="column wow fadeInLeft" data-wow-offset = "200">
                                 <div class="grid-item group-two " >
                                     <a href="https://atom-911.github.io/itservice/" target="_blank" class="fancybox">
                                         <div class="bg-img " >
@@ -460,7 +461,7 @@
                                     <img  src="images/img4.jpg" >
                                 </div>
                             </div>
-                            <div class="column wow fadeInRight"  >
+                            <div class="column wow fadeInRight" data-wow-offset = "200" >
                                 <div class="grid-item group-two " >
                                     <a href="https://trung-nv.github.io/covid-19/" target="_blank" class="fancybox">
                                         <div class="bg-img " >
@@ -480,7 +481,7 @@
                                     <img  src="images/img5.jpg" >
                                 </div>
                             </div>
-                            <div class="column wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <div class="column wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset = "200">
                                 <div class="grid-item group-one " >
                                     <a href="images/img6.jpg" class="fancybox">
                                         <div class="bg-img " >
@@ -516,9 +517,9 @@
                         <h2>Contact Me</h2>
                     </div>
                     <hr>
-                    <div class="block-content wow fadeInUp ">
+                    <div class="block-content">
                         
-                        <div class="block-item">
+                        <div class="block-item wow fadeInUp" >
                             <div class="contact-detail text-center">
                                 <div class="icon">
                                     <i class="fa fa-phone" aria-hidden="true"></i>
@@ -530,7 +531,7 @@
                                 </div>  
                             </div>
                         </div>
-                        <div class="block-item">
+                        <div class="block-item wow fadeInUp"  data-wow-delay = '0.5s'>
                             <div class="contact-detail text-center">
                                 <div class="icon">
                                     <i class="far fa-paper-plane" aria-hidden="true"></i>
@@ -542,7 +543,7 @@
                                 </div>  
                             </div>
                         </div>
-                        <div class="block-item">
+                        <div class="block-item wow fadeInUp" data-wow-delay = '1s'>
                             <div class="contact-detail text-center">
                                 <div class="icon">
                                     <i class="fas fa-home" aria-hidden="true"></i>
@@ -593,23 +594,27 @@
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->  
+    
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script  type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+    <!-- Counter up -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
     <!-- Fancybox -->   
     <script  type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
     <script  type="text/javascript" src="js/jquery.mousewheel.pack.js"></script>
     <!-- WOW -->
-    
     <script type="text/javascript" src="js/wow.js"></script>
+    <!-- Animate headline -->
     <script type="text/javascript" src="js/animate-headline.js"></script>
     <!-- Paralax -->
     <script type="text/javascript" src="js/parallax.js"></script>
      <!-- isopote -->
     <script src="js/isopote.js"></script>
+    <!-- slick slide -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-    <!-- Bootstrap -->
-    <script  type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+    
     <!-- validation -->
     <script type="text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
     <!-- All js -->
