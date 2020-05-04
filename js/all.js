@@ -9,10 +9,10 @@ $(document).ready(  function (){
      });
       // count text
 
-    // $('.count').counterUp({
-    //     delay: 10,
-    //     time: 2000
-    // });
+    $('.count').counterUp({
+        delay: 10,
+        time: 2000
+    });
     
     // scroll active
     var posNav = $('.menu').offset().top 
